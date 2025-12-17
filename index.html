@@ -16,6 +16,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>         
+                            <li><a href="#java">Java</a></li>
         </ul>
     </nav> </header> 
     <Section id="home" class="section hero">
@@ -39,6 +40,13 @@
                             using HTML, CSS, and JavaScript.</p>
                     <a href="#" target="_blank">View on Github</a>
                 </div>
+                                <div class="project-card id="java"">
+                                                    <h3>Java Project - Number Guessing Game</h3>
+                                                    <p>A simple yet engaging Java console application that demonstrates core programming concepts including loops, conditionals, user input handling, and random number generation.</p>
+                                                    <pre><code>import java.util.Scanner;\nimport java.util.Random;\n\npublic class Game {\n  public static void main(String[] args) {\n    Scanner sc = new Scanner(System.in);\n    Random r = new Random();\n    int num = r.nextInt(100) + 1;\n    int guess = 0;\n    int tries = 0;\n    \n    System.out.println(\"Guess a number 1-100\");\n    while(guess != num) {\n      System.out.print(\"Your guess: \");\n      guess = sc.nextInt();\n      tries++;\n      if(guess < num) System.out.println(\"Too low!\");\n      else if(guess > num) System.out.println(\"Too high!\");\n      else System.out.println(\"Correct! Tries: \" + tries);\n    }\n  }\n}</code></pre>
+                                                    <p><strong>Key Concepts:</strong> Random class, Scanner input, while loops, if-else conditionals</p>
+                                                    <a href="#" target="_blank">View on Github</a>
+                                                </div>
                 </div>
             </section>  
             <section id="Contact" class="Section">
